@@ -37,7 +37,7 @@
                   
                   <div class="field btn">
                      <div class="btn-layer"></div>
-                     <input type="button" value="Login" id="signup_button">
+                     <input type="submit" value="Login" id="signup_button">
                   </div>
                   <div class="signup-link">
                      Not a member? <a href="">Signup now</a>
@@ -87,6 +87,7 @@
            var password = document.getElementById("signup_password").value;*/
            alert("Hello");
            $.ajax({
+              type: "POST",
                url: "db_signup.py",
              context: document.body
             });
