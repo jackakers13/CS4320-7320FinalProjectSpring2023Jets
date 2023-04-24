@@ -8,6 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
     <script>
+       const signupBtn = document.querySelector("label.signup");
         function signup(){
            /*var email = document.getElementById("signup_email").value;
            var password = document.getElementById("signup_password").value;*/
@@ -16,6 +17,7 @@
              context: document.body
             });
         }
+       signupBtn.onclick = signup();
     </script>
    <body>
       <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -70,12 +72,12 @@
          </div>
       </div>
       <script>
-         /*const loginText = document.querySelector(".title-text .login");
+         const loginText = document.querySelector(".title-text .login");
          const loginForm = document.querySelector("form.login");
          const loginBtn = document.querySelector("label.login");
          const signupBtn = document.querySelector("label.signup");
          const signupLink = document.querySelector("form .signup-link a");
-         signupBtn.onclick = (()=>{
+         /*signupBtn.onclick = (()=>{
            loginForm.style.marginLeft = "-50%";
            loginText.style.marginLeft = "-50%";
          });
@@ -86,8 +88,7 @@
          signupLink.onclick = (()=>{
            signupBtn.click();
            return false;
-         });
-         */
+         });*/
       </script>
    </body>
 </html>
