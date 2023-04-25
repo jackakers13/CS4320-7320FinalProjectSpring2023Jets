@@ -1,0 +1,1 @@
+docker build -t se-jets-sp2023 .
