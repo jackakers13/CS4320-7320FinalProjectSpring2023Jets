@@ -29,7 +29,6 @@
          </div>
          <div class="form-inner">
             <form action="#" th:action="@{/login}" th:object="${message}" method="post" class="login">
-               <!--        <form action="home.html" class="login">-->
                <div class="field">
                   <input type="text" placeholder="Email Address" required>
                </div>
@@ -45,8 +44,7 @@
                   Not a member? <a href="">Signup now</a>
                </div>
             </form>
-            <form action="home.html" class="signup">
-
+            <form action="#" th:action="@{/signup}" th:object="${message}" method="post" class="signup">
                <div class="field">
                   <input type="text" placeholder="Email Address" required>
                </div>

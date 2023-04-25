@@ -1,6 +1,7 @@
 package com.jackakers13.cs7320backend.controllers;
 
 import com.jackakers13.cs7320backend.messages.LoginMessage;
+import com.jackakers13.cs7320backend.messages.SignUpMessage;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,6 +28,12 @@ public class LoginController {
     public String login(@ModelAttribute LoginMessage message, Model model) {
         model.addAttribute("message", message);
         return "home";
+    }
+
+    @PostMapping("/signup")
+    public String signup(@ModelAttribute SignUpMessage message, Model model) {
+        model.addAttribute("message", message);
+        return "login";
     }
 
 }
